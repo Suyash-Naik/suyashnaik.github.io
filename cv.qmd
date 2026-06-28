@@ -1,0 +1,76 @@
+---
+title: "CV"
+toc: true
+toc-depth: 2
+date: 28/06/2026
+---
+
+<!--
+  TWO OPTIONS for your CV:
+  A) Keep it here as a Quarto page (easy to update, always in sync with your site)
+  B) Embed a PDF (looks polished, matches what you send to recruiters)
+
+  For option B, uncomment the block below and comment out the rest:
+-->
+```{=html}
+<iframe src="assets/cv/cv-suyash-naik.pdf" width="150%" height="1000px" style="border:none;"></iframe>
+<p><a href="assets/cv/cv-suyash-naik.pdf" download>⬇ Download PDF</a></p>
+```
+
+
+<a href="assets/cv/cv-suyash-naik.pdf" class="btn-outline" download>⬇ Download PDF</a>
+
+<!--
+## Education
+
+**PhD in Biophysics / Developmental Biology** · 2020 – present
+Institute of Science and Technology Austria (ISTA), Klosterneuburg
+Supervisors: Prof. Carl-Philipp Heisenberg & Dr. Edouard Hannezo
+
+**BSc / MSc** · *(add your undergraduate institution and degree)*
+
+---
+
+## Research experience
+
+**PhD researcher** · Heisenberg & Hannezo Labs, ISTA · 2020 – present
+
+- *(bullet: one crisp sentence per key contribution — quantify where you can)*
+- *(bullet)*
+- *(bullet)*
+
+---
+
+## Skills
+
+| Category | Tools / methods |
+|---|---|
+| Programming | Python, R, MATLAB, Bash |
+| Data & analysis | pandas, scikit-learn, ggplot2, napari, Fiji |
+| Imaging | Confocal, lightsheet, laser ablation |
+| Modelling | Continuum mechanics, agent-based models |
+| Reproducibility | Git, GitLab CI, Quarto, Docker |
+| Communication | Science writing, data visualisation, public outreach |
+
+---
+
+## Publications & preprints
+
+- **Naik S**, et al. (year). *Title*. *Journal*. [DOI](#)
+
+*(Add as you publish — preprints count, list them clearly labelled)*
+
+---
+
+## Selected talks & posters
+
+- *(Conference name, year — "Title of talk/poster")*
+
+---
+
+## Other
+
+**PhDBalance social media co-ordinator** · using design and communication to support mental health in academia
+
+**Interests:** developmental biophysics, science policy, data storytelling, illustration
+-->
