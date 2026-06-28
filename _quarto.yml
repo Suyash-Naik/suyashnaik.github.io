@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Suyash Naik"
+  description: "Quantitative Life Scientist. PhD at IST Austria. Interested in biotech, data science, and consulting."
+  site-url: https://suyashnaik.com
+  favicon: assets/img/favicon.png
+  
+  navbar:
+    pinned: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "CV"
+        href: cv.qmd
+      - text: "Art"
+        href: art/index.qmd
+    right:
+      - icon: github
+        href: https://github.com/Suyash-Naik
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/YOUR-LINKEDIN-HANDLE   # ← update this
+        aria-label: LinkedIn
+      - icon: twitter
+        href: https://twitter.com/SuyashNaik6
+        aria-label: Twitter
+
+  page-footer:
+    center: "© 2025 Suyash Naik · Built with [Quarto](https://quarto.org)" 
+
+  format:
+    html:
+      theme:
+        light: [litera, assets/css/custom.scss]
+      toc: false
+      anchor-sections: false
+      smooth-scroll: true
+      grid:
+        body-width: 860px
+        margin-width: 180px
+
+lightbox: auto
+
+
+#this website also requires quarto, quarto-ext fontawesome, quarto-ext lightbox to be installed.
