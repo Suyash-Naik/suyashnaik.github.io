@@ -1,0 +1,14 @@
+---
+title: "Projects"
+subtitle: "Research, data work, and side projects — things I've built or contributed to. Site building is in progress!"
+listing:
+  contents: "*.qmd"
+  type: grid
+  grid-columns: 2
+  fields: [image, title, description, categories]
+  sort: "date desc"
+  image-height: 200px
+  categories: true
+page-layout: full
+toc: false
+---
