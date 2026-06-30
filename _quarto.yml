@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - CNAME
 
 website:
   title: "Dr. Suyash Naik"
@@ -37,7 +39,7 @@ format:
   html:
     theme:
       light: [lux, assets/css/custom.scss]
-      dark: [lux, assets/css/custom.scss]
+      dark: [darkly, assets/css/custom.scss]
     toc: false
     anchor-sections: false
     smooth-scroll: true
