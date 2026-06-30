@@ -1,0 +1,54 @@
+---
+title: "6 Hours to Fully Reproduce 5 Years of Research"
+description: "How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a new colour scheme for my slides — so I regenerated every figure in the paper in a single afternoon. The system held."
+date: 2026-06-30
+categories: [Data Engineering, Project Management, Open Science, Data Visualisation]
+image: images/pipeline-preview.png 
+---
+
+## The Challenge
+
+After five years of PhD experiments , a ccollaboration spanning institutions across 3 countries — microscopy, laser ablation, pipette aspiration, simulations — I and collaborators had 40 TB of raw data, and no shared system for any of it. 
+
+Traditionally, in Biological research labs, data is rarely documented or version-controlled systematically. Without a system, regenerating a single figure means days of manual work and no guarantee of consistency. 
+
+I built one that could do it in an afternoon. This is how.
+
+## What I Built
+
+I designed a modular, figure-centric analysis pipeline from first principles, treating the paper as a product and each figure as a tracked deliverable.
+
+::: {.stats-strip}
+::: {.stat}
+[40 TB+]{.stat-value} [raw data consolidated]{.stat-label}
+:::
+::: {.stat}
+[12]{.stat-value} [figures, all reproducible]{.stat-label}
+:::
+::: {.stat}
+[215]{.stat-value} [commits of audit trail]{.stat-label}
+:::
+::: {.stat}
+[3]{.stat-value} [institutions coordinated]{.stat-label}
+:::
+:::
+
+**Repository architecture** — a structured Git repo with per-figure data folders, six dedicated Jupyter notebooks, and shared utility scripts in `src/`. Every collaborator could contribute without a setup call.
+
+**Standardised ingestion** — all raw experimental data and simulation outputs (from collaborators Dr. Yann-Edwin Keta at ESPCI Paris and Dr. Silke Henkes at University of Bristol) were normalised into structured datasheets before analysis, giving the notebooks a consistent interface regardless of source.
+
+**Locked environment** — dependencies are pinned via `pixi.lock`, so any reviewer or future researcher can reproduce the full environment in one command: `pixi install`.
+
+**Cross-continental coordination** — managed asynchronous collaboration across three time zones over two years, aligning contributors on data standards, figure revisions, and code conventions.
+
+## The Result
+
+The paper was submitted to *Nature Communications*. Every figure is reproducible from source data via a single notebook — no manual steps, no tribal knowledge required.
+
+The real test came when I needed a different colour scheme for my PhD defence. I regenerated all 12 figures in **under 6 hours**. The same task would have taken several days without the pipeline — and carried a real risk of introducing inconsistencies.
+
+The full repository is publicly archived under CC BY-SA 4.0 as an open-science resource.
+
+::: {.project-links}
+[View repository →](https://github.com/Suyash-Naik/2026-Keratinepithlialspreadingcoordinate-Data){.btn-outline}
+:::

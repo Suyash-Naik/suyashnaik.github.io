@@ -2,7 +2,6 @@
 title: ""
 page-layout: full
 toc: false
-date: 28/06/2026
 ---
 
 ```{=html}
@@ -77,9 +76,19 @@ Live fluorescence imaging · Laser ablation · Micropipette Aspiration · Atomic
 ## Recent work
 
 ::: {.project-teaser}
-### [Epithelial tension during gastrulation](projects/gastrulation.qmd)
-Using laser ablation and mechanical modelling to map how stress fields guide tissue flow in the early zebrafish embryo.
+### [6 Hours to Fully Reproduce 5 Years of Research — The Efficiency System Behind It](projects/efficiency-pipeline.qmd)
+How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a new colour scheme for my slides — so I regenerated every figure in the paper in a single afternoon. The system held.
+
+::: {.project-stats}
+[40 TB+]{.ps-value} [raw data]{.ps-label}
+[12]{.ps-value} [figures]{.ps-label}
+[215]{.ps-value} [commits]{.ps-label}
+[3]{.ps-value} [institutions]{.ps-label}
 :::
+
+[Full case study →](projects/efficiency-pipeline.qmd){.project-case-link}
+:::
+
 
 ::: {.project-teaser}
 ### [Quantifying cell shape dynamics](projects/cell-shape.qmd)
