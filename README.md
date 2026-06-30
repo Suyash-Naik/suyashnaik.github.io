@@ -1,4 +1,4 @@
-# suyashnaik.com
+# About Dr. Suyash Naik
 My Personal Website — quantitative life scientist, occasional artist. Built with Quarto, hosted on GitHub Pages.
 Built with [Quarto](https://quarto.org), hosted on [GitHub Pages](https://pages.github.com).
 
@@ -7,6 +7,7 @@ Built with [Quarto](https://quarto.org), hosted on [GitHub Pages](https://pages.
 # About Me
 
 PhD in Developmental Biophysics. I spent my PhD figuring out how embryos use physics to build themselves. Understanding the regulated physical principles that mark the path of Morphogensis of Life. That meant designing experiments, writing analysis pipelines, and making sense of messy data under uncertainty — skills that transfer well outside academia where I plan to be in the future. 
+
 
 I'm looking in future footing sectors where rigour and clear thinking matter.
 
