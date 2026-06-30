@@ -33,6 +33,8 @@ I designed a modular, figure-centric analysis pipeline from first principles, tr
 :::
 :::
 
+![](../art/assets/img/pipeline-preview.png){fig-alt="Pipeline architecture overview" .project-image .lightbox}
+
 **Repository architecture** —   a structured Git repo with per-figure folders and six dedicated notebooks, designed so collaborators could work in parallel without waiting on a central coordinator — cutting the back-and-forth that slows most multi-institution projects. 
 
 **Standardised ingestion** — all raw experimental data and simulation outputs (from collaborators Dr. Yann-Edwin Keta at ESPCI Paris and Dr. Silke Henkes at Leiden University) were normalised into a single format. Three countries, three languages, one schema.
