@@ -74,6 +74,6 @@
     "href": "projects/efficiency-pipeline.html#the-result",
     "title": "6 Hours to Fully Reproduce 5 Years of Research",
     "section": "The Result",
-    "text": "The Result\nThe paper was submitted to Nature Communications. Every figure — across 12 panels drawing on 40 TB of source data — is fully reproducible and stays reproducible from a single resource, with no manual steps and no institutional knowledge required.\nThe real test came the day before my PhD defence. I needed a different colour scheme for my slides, so I regenerated all 12 figures from scratch. It took under 6 hours. Without the pipeline, the same task would have taken days — and risked introducing inconsistencies across the paper.\nThe full repository is publicly archived under CC BY-SA 4.0 as an open-science resource. ::: {.project-links} View repository → :::"
+    "text": "The Result\nThe paper was submitted to Nature Communications. Every figure — across 12 panels drawing on 40 TB of source data — is fully reproducible and stays reproducible from a single resource, with no manual steps and no institutional knowledge required.\nThe real test came the day before my PhD defence. I needed a different colour scheme for my slides, so I regenerated all 12 figures from scratch. It took under 6 hours. Without the pipeline, the same task would have taken days — and risked introducing inconsistencies across the paper.\nThe full repository is publicly archived under CC BY-SA 4.0 as an open-science resource.\n\nView repository →"
   }
 ]
