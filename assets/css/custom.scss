@@ -240,6 +240,35 @@ a {
 
 
 
+// ─── Stats strip (project pages) ─────────────────────────────────────────────
+
+.stats-strip {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $my-accent;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: $text-muted;
+  text-align: center;
+  margin-top: 0.15rem;
+}
+
 // ─── Responsive ──────────────────────────────────────────────────────────────
 
 @media (max-width: 640px) {
