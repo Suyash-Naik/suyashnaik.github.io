@@ -3,7 +3,7 @@ title: "6 Hours to Fully Reproduce 5 Years of Research"
 description: "How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a new colour scheme for my slides — so I regenerated every figure in the paper in a single afternoon. The system held."
 date: 2026-06-30
 categories: [Data Engineering, Project Management, Open Science, Data Visualisation]
-image: art/assets/img/pipeline-preview.png
+image: /art/assets/img/pipeline-preview.png
 ---
 
 ## The Challenge
@@ -60,6 +60,7 @@ The paper was submitted to [*Nature Communications*](https://www.nature.com/arti
 The real test came the day before my PhD defence. I needed a different colour scheme for my slides, so I regenerated all 12 figures from scratch. It took under 6 hours. Without the pipeline, the same task would have taken days — and risked introducing inconsistencies across the paper.
 
 The full repository is publicly archived under CC BY-SA 4.0 as an open-science resource.
+
 ::: {.project-links}
 [View repository →](https://github.com/Suyash-Naik/2026-Keratinepithlialspreadingcoordinate-Data){.btn-outline}
 :::
