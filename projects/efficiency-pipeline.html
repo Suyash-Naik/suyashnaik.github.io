@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-06-30">
+<meta name="description" content="How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a new colour scheme for my slides — so I regenerated every figure in the paper in a single afternoon. The system held.">
 
-<title>Art – Dr.&nbsp;Suyash Naik</title>
+<title>6 Hours to Fully Reproduce 5 Years of Research – Dr.&nbsp;Suyash Naik</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -46,9 +48,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-f2dbfeb9501a19ddb586d3488e569a13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-11fd7947c2290faf7710f62455273dc6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-f2dbfeb9501a19ddb586d3488e569a13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -273,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../art/index.html" aria-current="page"> 
+    <a class="nav-link" href="../art/index.html"> 
 <span class="menu-text">Art</span></a>
   </li>  
 </ul>
@@ -302,25 +301,41 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Art</h1>
-<p class="subtitle lead">Illustrations made in the margins of a PhD — biology, ideas, and occasionally feelings.</p>
+<h1 class="title">6 Hours to Fully Reproduce 5 Years of Research</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Data Engineering</div>
+    <div class="quarto-category">Project Management</div>
+    <div class="quarto-category">Open Science</div>
+    <div class="quarto-category">Data Visualisation</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a new colour scheme for my slides — so I regenerated every figure in the paper in a single afternoon. The system held.
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 30, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -330,44 +345,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Most of this should live on <a href="https://www.instagram.com/suyash_suedt/">Instagram</a> but I like the customization and control here. If you like any of these or would like a print please let me know. I would be more than happy to share!</p>
-<!--
-The lightbox="true" makes them click-to-expand automatically
-     (requires: quarto add quarto-ext/lightbox)
--->
-<div class="art-gallery">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="assets/img/art/Hydravitruvitous.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-1;title:Hydra Vitruvian;" data-gallery="quarto-lightbox-gallery-1" title="Hydra Vitruvian"><img src="assets/img/art/Hydravitruvitous.jpg" class="img-fluid figure-img" alt="Hydra Vitruvian"></a></p>
-<figcaption>Hydra Vitruvian</figcaption>
-</figure>
+<section id="the-challenge" class="level2">
+<h2 data-anchor-id="the-challenge">The Challenge</h2>
+<p>After five years of PhD experiments , a ccollaboration spanning institutions across 3 countries — microscopy, laser ablation, pipette aspiration, simulations — I and collaborators had 40 TB of raw data, and no shared system for any of it.</p>
+<p>Traditionally, in Biological research labs, data is rarely documented or version-controlled systematically. Without a system, regenerating a single figure means days of manual work and no guarantee of consistency.</p>
+<p>I built one that could do it in an afternoon. This is how.</p>
+</section>
+<section id="what-i-built" class="level2">
+<h2 data-anchor-id="what-i-built">What I Built</h2>
+<p>I designed a modular, figure-centric analysis pipeline from first principles, treating the paper as a product and each figure as a tracked deliverable.</p>
+<div class="stats-strip">
+<div class="stat">
+<p><span class="stat-value">40 TB+</span> <span class="stat-label">raw data consolidated</span></p>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="assets/img/art/Hydrassil.png" class="lightbox" data-glightbox="description: .lightbox-desc-2;title:Hydra Ssil;" data-gallery="quarto-lightbox-gallery-2" title="Hydra Ssil"><img src="assets/img/art/Hydrassil.png" class="img-fluid figure-img" alt="Hydra Ssil"></a></p>
-<figcaption>Hydra Ssil</figcaption>
-</figure>
+<div class="stat">
+<p><span class="stat-value">12</span> <span class="stat-label">figures, all reproducible</span></p>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="assets/img/art/Zebra_green.png" class="lightbox" data-glightbox="description: .lightbox-desc-3;title:Zebrafish;" data-gallery="quarto-lightbox-gallery-3" title="Zebrafish"><img src="assets/img/art/Zebra_green.png" class="img-fluid figure-img" alt="Zebrafish"></a></p>
-<figcaption>Zebrafish</figcaption>
-</figure>
+<div class="stat">
+<p><span class="stat-value">215</span> <span class="stat-label">commits of audit trail</span></p>
 </div>
+<div class="stat">
+<p><span class="stat-value">3</span> <span class="stat-label">institutions coordinated</span></p>
+</div>
+</div>
+<p><strong>Repository architecture</strong> — a structured Git repo with per-figure data folders, six dedicated Jupyter notebooks, and shared utility scripts in <code>src/</code>. Every collaborator could contribute without a setup call.</p>
+<p><strong>Standardised ingestion</strong> — all raw experimental data and simulation outputs (from collaborators Dr.&nbsp;Yann-Edwin Keta at ESPCI Paris and Dr.&nbsp;Silke Henkes at University of Bristol) were normalised into structured datasheets before analysis, giving the notebooks a consistent interface regardless of source.</p>
+<p><strong>Locked environment</strong> — dependencies are pinned via <code>pixi.lock</code>, so any reviewer or future researcher can reproduce the full environment in one command: <code>pixi install</code>.</p>
+<p><strong>Cross-continental coordination</strong> — managed asynchronous collaboration across three time zones over two years, aligning contributors on data standards, figure revisions, and code conventions.</p>
+</section>
+<section id="the-result" class="level2">
+<h2 data-anchor-id="the-result">The Result</h2>
+<p>The paper was submitted to <em>Nature Communications</em>. Every figure is reproducible from source data via a single notebook — no manual steps, no tribal knowledge required.</p>
+<p>The real test came when I needed a different colour scheme for my PhD defence. I regenerated all 12 figures in <strong>under 6 hours</strong>. The same task would have taken several days without the pipeline — and carried a real risk of introducing inconsistencies.</p>
+<p>The full repository is publicly archived under CC BY-SA 4.0 as an open-science resource.</p>
+<div class="project-links">
+<p><a href="https://github.com/Suyash-Naik/2026-Keratinepithlialspreadingcoordinate-Data" class="btn-outline">View repository →</a></p>
 </div>
 
 
-<div class="hidden" aria-hidden="true">
-<div class="glightbox-desc lightbox-desc-1">
-<p>Hydra Vitruvian — As on one branch so on the other, virtuvian symmetry organizing body structure in the hydra. Made in the endings of a early journey, 2017.</p>
-</div>
-<div class="glightbox-desc lightbox-desc-2">
-<p>Hydra Ssil — A hydra, a tree, and the movement on the tree of life. Made to celebrate <a href="https://doi-org/10.1242/jeb.232702">this discovery</a>, 2020.</p>
-</div>
-<div class="glightbox-desc lightbox-desc-3">
-<p>Zebrafish — The mind boggling mysteries of fish skin morphogensis. Made at a time of flowing thoughts and ideas, 2021.</p>
-</div>
-</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -790,38 +806,6 @@ The lightbox="true" makes them click-to-expand automatically
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 

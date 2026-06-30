@@ -4,21 +4,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
-    "section": "",
-    "text": "⬇ Download PDF\n⬇ Download PDF"
-  },
-  {
-    "objectID": "art/index.html",
-    "href": "art/index.html",
-    "title": "Art",
-    "section": "",
-    "text": "Most of this should live on Instagram but I like the customization and control here. If you like any of these or would like a print please let me know. I would be more than happy to share!\n\n\n\n\n\nHydra Vitruvian\n\n\n\n\n\nHydra Ssil\n\n\n\n\n\nZebrafish\n\n\n\n\n\n\n\nHydra Vitruvian — As on one branch so on the other, virtuvian symmetry organizing body structure in the hydra. Made in the endings of a early journey, 2017.\n\n\nHydra Ssil — A hydra, a tree, and the movement on the tree of life. Made to celebrate this discovery, 2020.\n\n\nZebrafish — The mind boggling mysteries of fish skin morphogensis. Made at a time of flowing thoughts and ideas, 2021."
+    "text": "6 Hours to Fully Reproduce 5 Years of Research\n\n\n\nData Engineering\n\nProject Management\n\nOpen Science\n\nData Visualisation\n\n\n\nHow I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a…\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -46,6 +32,48 @@
     "href": "index.html#recent-work",
     "title": "Dr Suyash Naik",
     "section": "Recent work",
-    "text": "Recent work\n\nEpithelial tension during gastrulation\nUsing laser ablation and mechanical modelling to map how stress fields guide tissue flow in the early zebrafish embryo.\n\n\nQuantifying cell shape dynamics\nAn image analysis pipeline (Python + Napari) to extract morphometric features from 3D timelapse data.\n\nAll projects →\n\n\nI also make illustrations — mostly about biology, occasionally about everything else."
+    "text": "Recent work\n\n6 Hours to Fully Reproduce 5 Years of Research — The Efficiency System Behind It\nHow I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a new colour scheme for my slides — so I regenerated every figure in the paper in a single afternoon. The system held.\n\n40 TB+ raw data 12 figures 215 commits 3 institutions\n\nFull case study →\n\n\nQuantifying cell shape dynamics\nAn image analysis pipeline (Python + Napari) to extract morphometric features from 3D timelapse data.\n\nAll projects →\n\n\nI also make illustrations — mostly about biology, occasionally about everything else."
+  },
+  {
+    "objectID": "art/index.html",
+    "href": "art/index.html",
+    "title": "Art",
+    "section": "",
+    "text": "Most of this should live on Instagram but I like the customization and control here. If you like any of these or would like a print please let me know. I would be more than happy to share!\n\n\n\n\n\nHydra Vitruvian\n\n\n\n\n\nHydra Ssil\n\n\n\n\n\nZebrafish\n\n\n\n\n\n\n\nHydra Vitruvian — As on one branch so on the other, virtuvian symmetry organizing body structure in the hydra. Made in the endings of a early journey, 2017.\n\n\nHydra Ssil — A hydra, a tree, and the movement on the tree of life. Made to celebrate this discovery, 2020.\n\n\nZebrafish — The mind boggling mysteries of fish skin morphogensis. Made at a time of flowing thoughts and ideas, 2021."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "⬇ Download PDF\n⬇ Download PDF"
+  },
+  {
+    "objectID": "projects/efficiency-pipeline.html",
+    "href": "projects/efficiency-pipeline.html",
+    "title": "6 Hours to Fully Reproduce 5 Years of Research",
+    "section": "",
+    "text": "After five years of PhD experiments , a ccollaboration spanning institutions across 3 countries — microscopy, laser ablation, pipette aspiration, simulations — I and collaborators had 40 TB of raw data, and no shared system for any of it.\nTraditionally, in Biological research labs, data is rarely documented or version-controlled systematically. Without a system, regenerating a single figure means days of manual work and no guarantee of consistency.\nI built one that could do it in an afternoon. This is how."
+  },
+  {
+    "objectID": "projects/efficiency-pipeline.html#the-challenge",
+    "href": "projects/efficiency-pipeline.html#the-challenge",
+    "title": "6 Hours to Fully Reproduce 5 Years of Research",
+    "section": "",
+    "text": "After five years of PhD experiments , a ccollaboration spanning institutions across 3 countries — microscopy, laser ablation, pipette aspiration, simulations — I and collaborators had 40 TB of raw data, and no shared system for any of it.\nTraditionally, in Biological research labs, data is rarely documented or version-controlled systematically. Without a system, regenerating a single figure means days of manual work and no guarantee of consistency.\nI built one that could do it in an afternoon. This is how."
+  },
+  {
+    "objectID": "projects/efficiency-pipeline.html#what-i-built",
+    "href": "projects/efficiency-pipeline.html#what-i-built",
+    "title": "6 Hours to Fully Reproduce 5 Years of Research",
+    "section": "What I Built",
+    "text": "What I Built\nI designed a modular, figure-centric analysis pipeline from first principles, treating the paper as a product and each figure as a tracked deliverable.\n\n\n40 TB+ raw data consolidated\n\n\n12 figures, all reproducible\n\n\n215 commits of audit trail\n\n\n3 institutions coordinated\n\n\nRepository architecture — a structured Git repo with per-figure data folders, six dedicated Jupyter notebooks, and shared utility scripts in src/. Every collaborator could contribute without a setup call.\nStandardised ingestion — all raw experimental data and simulation outputs (from collaborators Dr. Yann-Edwin Keta at ESPCI Paris and Dr. Silke Henkes at University of Bristol) were normalised into structured datasheets before analysis, giving the notebooks a consistent interface regardless of source.\nLocked environment — dependencies are pinned via pixi.lock, so any reviewer or future researcher can reproduce the full environment in one command: pixi install.\nCross-continental coordination — managed asynchronous collaboration across three time zones over two years, aligning contributors on data standards, figure revisions, and code conventions."
+  },
+  {
+    "objectID": "projects/efficiency-pipeline.html#the-result",
+    "href": "projects/efficiency-pipeline.html#the-result",
+    "title": "6 Hours to Fully Reproduce 5 Years of Research",
+    "section": "The Result",
+    "text": "The Result\nThe paper was submitted to Nature Communications. Every figure is reproducible from source data via a single notebook — no manual steps, no tribal knowledge required.\nThe real test came when I needed a different colour scheme for my PhD defence. I regenerated all 12 figures in under 6 hours. The same task would have taken several days without the pipeline — and carried a real risk of introducing inconsistencies.\nThe full repository is publicly archived under CC BY-SA 4.0 as an open-science resource.\n\nView repository →"
   }
 ]
