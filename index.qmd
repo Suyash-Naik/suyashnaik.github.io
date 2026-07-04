@@ -61,13 +61,12 @@ Science writing · Data visualisation · Teaching · PhDBalance social media  ·
 **Tools**
 Git / GitLab CI · Quarto · LaTeX · Fiji/ImageJ · Napari 
 :::
-<!--
 
 ::: {.skill-card}
 **Wet lab**
 Live fluorescence imaging · Laser ablation · Micropipette Aspiration · Atomic force Microscopy · Zebrafish & organoid models
 :::
--->
+
 
 :::
 
@@ -84,6 +83,7 @@ How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data int
 [12]{.ps-value} [figures]{.ps-label}
 [215]{.ps-value} [commits]{.ps-label}
 [3]{.ps-value} [institutions]{.ps-label}
+[5]{.ps-value} [contributors]{.ps-label}
 :::
 
 [Full case study →](projects/efficiency-pipeline.qmd){.project-case-link}
@@ -91,8 +91,7 @@ How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data int
 
 
 ::: {.project-teaser}
-### [Quantifying cell shape dynamics](projects/cell-shape.qmd)
-An image analysis pipeline (Python + Napari) to extract morphometric features from 3D timelapse data.
+### [Incoming]
 :::
 
 [All projects →](projects/index.qmd)
