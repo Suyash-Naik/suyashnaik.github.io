@@ -1,0 +1,26 @@
+# Source of truth for the "Recent work" teasers on the homepage (index.qmd).
+# Run `pixi run update-index` after editing this file to regenerate index.qmd,
+# or just push to main — CI regenerates and commits it automatically.
+
+projects:
+  - slug: efficiency-pipeline
+    title: "6 Hours to Fully Reproduce 5 Years of Research — The Efficiency System Behind It"
+    blurb: >
+      How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data
+      into 12 fully reproducible figures. The real stress-test: the day before my
+      defence, I wanted a new colour scheme for my slides — so I regenerated every
+      figure in the paper in a single afternoon. The system held.
+    link: projects/efficiency-pipeline.qmd
+    featured: true
+    order: 1
+    stats:
+      - value: "40 TB+"
+        label: "raw data"
+      - value: "12"
+        label: "figures"
+      - value: "215"
+        label: "commits"
+      - value: "3"
+        label: "institutions"
+      - value: "5"
+        label: "contributors"

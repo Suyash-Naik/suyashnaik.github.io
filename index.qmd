@@ -74,6 +74,7 @@ Live fluorescence imaging · Laser ablation · Micropipette Aspiration · Atomic
 
 ## Recent work
 
+<!-- PROJECTS:START -->
 ::: {.project-teaser}
 ### [6 Hours to Fully Reproduce 5 Years of Research — The Efficiency System Behind It](projects/efficiency-pipeline.qmd)
 How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a new colour scheme for my slides — so I regenerated every figure in the paper in a single afternoon. The system held.
@@ -95,6 +96,7 @@ How I built an end-to-end analysis pipeline that condensed 40 TB of PhD data int
 :::
 
 [All projects →](projects/index.qmd)
+<!-- PROJECTS:END -->
 
 ---
 
