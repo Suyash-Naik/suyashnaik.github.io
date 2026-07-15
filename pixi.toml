@@ -1,0 +1,13 @@
+[workspace]
+authors = ["Suyash-Naik <66520562+Suyash-Naik@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "suyashnaik.github.io"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+update-index = "python scripts/update_index.py"
+
+[dependencies]
+python = ">=3.11"
+pyyaml = ">=6.0"
