@@ -1,5 +1,5 @@
 # About Dr. Suyash Naik
-My Personal Website — quantitative life scientist, occasional artist. Built with Quarto, hosted on GitHub Pages.
+My [Personal Website](https://suyashnaik.com) — quantitative life scientist, occasional artist. Built with Quarto, hosted on GitHub Pages.
 Built with [Quarto](https://quarto.org), hosted on [GitHub Pages](https://pages.github.com).
 
 🔗 [suyashnaik.com](https://suyashnaik.com)
