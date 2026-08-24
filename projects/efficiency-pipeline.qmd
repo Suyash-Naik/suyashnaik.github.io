@@ -32,7 +32,7 @@ I designed a modular, figure-centric analysis pipeline from first principles, tr
 [3]{.stat-value} [institutions coordinated]{.stat-label}
 :::
 ::: {.stat}
-[7 ]{.stat-value} [ contributors across 3 countries]{.stat-label}
+[7 ]{.stat-value} [ co-authors across 3 countries]{.stat-label}
 :::
 :::
 
@@ -47,7 +47,7 @@ I designed a modular, figure-centric analysis pipeline from first principles, tr
 
 **Cross-continental coordination** — managed asynchronous collaboration across three countries over two years, aligning contributors on data standards, figure revisions, and code conventions with standards that fit publishers.
 
-**Data consolidation at scale** — 40 TB of raw experimental data, collected across five years using ever changing bio-image formats and conventions, was systematically catalogued, cleaned, and reduced into structured datasheets that feed directly into the pipeline.  Every number in the paper traces back to a specific archieved file. 
+**Data consolidation at scale** — 40 TB of raw experimental data, collected across five years using ever changing bio-image formats and conventions, was systematically catalogued, cleaned, and reduced into structured datasheets that feed directly into the pipeline.  Every number in the paper traces back to a specific archived file. 
 
 **The pipeline wasn't designed once and handed over** — it evolved across 2.5 years as the scientific story changed. 
 
@@ -58,7 +58,7 @@ Figures were added, reframed, and cut entirely.
 
 Reviewer feedback demanded new analyses mid-process. 
 
-The system had to be flexible enough to absorb that ambiguity without breaking — and robust enough that every change was traceable.
+The system had to be flexible enough to absorb that ambiguity without breaking — and robust enough that every change was traceable. The public data repository is the clean end of a longer trail — the 215 commits span it and the private upstream repository (available on github) where raw data assembly and figure development happened.
 
 ## The Result
 
@@ -83,6 +83,7 @@ This pipeline made it possible to correct in 3 hours.
 **Locate it.** Because every panel is generated from raw data by a single notebook with no manual steps, the path from *figure* to *notebook* to *source table* to *sample* is a walk, not a search. Across 40 TB of catalogued source data, finding the fault was one traversal. The wrong sample was replaced with the correct one.
 
 **Rebuild it.** Figure 7F was regenerated from raw data and every associated test re-run end to end. The issue was closed against the commits that fixed it.
+
 ::: {.stats-strip}
 ::: {.stat}
 [3 h]{.stat-value} [of work, comment to corrected figure]{.stat-label}
@@ -102,7 +103,7 @@ The commits are dated across three days. The work inside them is three hours. No
 
 That distance between elapsed time and effort is the whole argument. There was no archaeology. No hunting for a file across five years of storage. No reconstructing a two-year-old analysis from memory. No waiting on the one person who knew where the data lived. Every hour that passed was a decision, not a delay, which is only true when you already know exactly what you are looking at.
 
-**The pipeline did not prevent this error, and it was never going to.** Data assembly has human in it. What the pipeline changed is the *cost* of the error: cheap to locate, cheap to correct, impossible to quietly leave alone. In a project without one, the same comment produces weeks of reconstruction and an uncomfortable silence while it happens.
+**The pipeline did not prevent this error, and it was never going to.** Data assembly has humans in it. What the pipeline changed is the *cost* of the error: cheap to locate, cheap to correct, impossible to quietly leave alone. In a project without one, the same comment produces weeks of reconstruction and an uncomfortable silence while it happens.
 
 That silence is what damages a paper. Not the duplicated sample.
 

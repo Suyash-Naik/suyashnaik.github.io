@@ -22,5 +22,5 @@ projects:
         label: "commits"
       - value: "3"
         label: "institutions"
-      - value: "5"
-        label: "contributors"
+      - value: "7"
+        label: "co-authors"
