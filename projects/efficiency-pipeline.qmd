@@ -68,6 +68,48 @@ The real test came the day before my PhD defence. I needed a different colour sc
 
 The full repository is publicly archived under CC BY-SA 4.0 as an open-science resource.
 
+## The External Stress Test
+
+The first stress test was self-imposed. The second one wasn't.
+
+Two months after publication, a reader posted a comment on PubPeer about the source data behind Figure 7F: a block of values in the control condition appeared twice, in the same order. Not a challenge to the biology — a claim about a file. A duplicated sample, introduced during data assembly.
+
+It is exactly the class of error that no reader can see. It does not change the shape of a plot. It leaves no visual artefact. It sits inside a source-data table that nobody — not five expert reviewers, not four authors, not me — reads row by row. It is an accounting error, not an analytical one.
+
+This pipeline made it possible to correct in 3 hours. 
+
+**Log it.** I opened a public issue in the data repository and quoted the comment in full. The error report entered the same system as every figure in the paper: numbered, visible, attributable, closeable. The archived raw data was brought back online and the analysis repository reopened to redo the data assembly.
+
+**Locate it.** Because every panel is generated from raw data by a single notebook with no manual steps, the path from *figure* to *notebook* to *source table* to *sample* is a walk, not a search. Across 40 TB of catalogued source data, finding the fault was one traversal. The wrong sample was replaced with the correct one.
+
+**Rebuild it.** Figure 7F was regenerated from raw data and every associated test re-run end to end. The issue was closed against the commits that fixed it.
+::: {.stats-strip}
+::: {.stat}
+[3 h]{.stat-value} [of work, comment to corrected figure]{.stat-label}
+:::
+::: {.stat}
+[40 TB]{.stat-value} [searched in one traversal]{.stat-label}
+:::
+::: {.stat}
+[3]{.stat-value} [commits to resolve]{.stat-label}
+:::
+::: {.stat}
+[0]{.stat-value} [conclusions changed]{.stat-label}
+:::
+:::
+
+The commits are dated across three days. The work inside them is three hours. Nothing forced that gap closed, so I didn't force it: I knew what had gone wrong within minutes of reading the comment, and the calendar bought sleep and time to walk my co-authors through the change before it went public.
+
+That distance between elapsed time and effort is the whole argument. There was no archaeology. No hunting for a file across five years of storage. No reconstructing a two-year-old analysis from memory. No waiting on the one person who knew where the data lived. Every hour that passed was a decision, not a delay, which is only true when you already know exactly what you are looking at.
+
+**The pipeline did not prevent this error, and it was never going to.** Data assembly has human in it. What the pipeline changed is the *cost* of the error: cheap to locate, cheap to correct, impossible to quietly leave alone. In a project without one, the same comment produces weeks of reconstruction and an uncomfortable silence while it happens.
+
+That silence is what damages a paper. Not the duplicated sample.
+
+Reproducibility is not a box ticked at submission. It is a liability the corresponding author carries for as long as the paper is cited, and the only way to carry it cheaply is to have built the system before you needed it. Two years after the pipeline was designed and three months after the paper was published, a stranger on the internet stress-tested it without warning.
+
+The system held.
+
 ::: {.project-links}
-[View repository →](https://github.com/Suyash-Naik/2026-Keratinepithlialspreadingcoordinate-Data){.btn-outline}
+[View repository →](https://github.com/Suyash-Naik/2026-Keratinepithelialspreadingcoordinate-Data){.btn-outline}
 :::
