@@ -1,0 +1,30 @@
+name: Update index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "projects.yaml"
+      - "scripts/update_index.py"
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: prefix-dev/setup-pixi@v0.8.1
+        with:
+          pixi-version: latest
+
+      - name: Regenerate index.qmd
+        run: pixi run update-index
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: regenerate index.qmd from projects.yaml"
+          file_pattern: index.qmd

@@ -2,3 +2,4 @@
 **/*.quarto_ipynb
 .pixi/*
 !.pixi/config.toml
+_site
