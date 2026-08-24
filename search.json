@@ -4,7 +4,35 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "6 Hours to Fully Reproduce 5 Years of Research\n\n\n\nData Engineering\n\nProject Management\n\nOpen Science\n\nData Visualisation\n\n\n\nHow I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a…\n\n\n\n\n\nNo matching items"
+    "text": "Automate the boring stuff with Agentic AI\n\n\n\nData Engineering\n\nProject Management\n\nAI Management\n\nData Visualisation\n\n\n\nAgentic AI is here and it’s time to put it to work. In this project, I built a system that can autonomously generate and execute code to solve complex problems, all while…\n\n\n\n\n\n\n\n\n\n\n\n\n6 Hours to Fully Reproduce 5 Years of Research\n\n\n\nData Engineering\n\nProject Management\n\nOpen Science\n\nData Visualisation\n\n\n\nHow I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a…\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/deploy-ai.html",
+    "href": "projects/deploy-ai.html",
+    "title": "Automate the boring stuff with Agentic AI",
+    "section": "",
+    "text": "5 day long agentic AI hackathhon, with myself and a team of agents. Deploy while learning the developing agentic AI framework."
+  },
+  {
+    "objectID": "projects/deploy-ai.html#the-challenge",
+    "href": "projects/deploy-ai.html#the-challenge",
+    "title": "Automate the boring stuff with Agentic AI",
+    "section": "",
+    "text": "5 day long agentic AI hackathhon, with myself and a team of agents. Deploy while learning the developing agentic AI framework."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "⬇ Download PDF\n⬇ Download PDF"
+  },
+  {
+    "objectID": "art/index.html",
+    "href": "art/index.html",
+    "title": "Art",
+    "section": "",
+    "text": "Most of this should live on Instagram but I like the customization and control here. If you like any of these or would like a print please let me know. I would be more than happy to share!\n\n\n\n\n\nHydra Vitruvian\n\n\n\n\n\nHydra Ssil\n\n\n\n\n\nZebrafish\n\n\n\n\n\n\n\nHydra Vitruvian — As on one branch so on the other, virtuvian symmetry organizing body structure in the hydra. Made in the endings of a early journey, 2017.\n\n\nHydra Ssil — A hydra, a tree, and the movement on the tree of life. Made to celebrate this discovery, 2020.\n\n\nZebrafish — The mind boggling mysteries of fish skin morphogensis. Made at a time of flowing thoughts and ideas, 2021."
   },
   {
     "objectID": "index.html",
@@ -35,20 +63,6 @@
     "text": "Recent work\n\n\n6 Hours to Fully Reproduce 5 Years of Research — The Efficiency System Behind It\nHow I built an end-to-end analysis pipeline that condensed 40 TB of PhD data into 12 fully reproducible figures. The real stress-test: the day before my defence, I wanted a new colour scheme for my slides — so I regenerated every figure in the paper in a single afternoon. The system held.\n\n40 TB+ raw data 12 figures 215 commits 3 institutions 5 contributors\n\nFull case study →\n\n\n[Incoming]\n\nAll projects → \n\n\nI also make illustrations — mostly about biology, occasionally about everything else."
   },
   {
-    "objectID": "art/index.html",
-    "href": "art/index.html",
-    "title": "Art",
-    "section": "",
-    "text": "Most of this should live on Instagram but I like the customization and control here. If you like any of these or would like a print please let me know. I would be more than happy to share!\n\n\n\n\n\nHydra Vitruvian\n\n\n\n\n\nHydra Ssil\n\n\n\n\n\nZebrafish\n\n\n\n\n\n\n\nHydra Vitruvian — As on one branch so on the other, virtuvian symmetry organizing body structure in the hydra. Made in the endings of a early journey, 2017.\n\n\nHydra Ssil — A hydra, a tree, and the movement on the tree of life. Made to celebrate this discovery, 2020.\n\n\nZebrafish — The mind boggling mysteries of fish skin morphogensis. Made at a time of flowing thoughts and ideas, 2021."
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
-    "section": "",
-    "text": "⬇ Download PDF\n⬇ Download PDF"
-  },
-  {
     "objectID": "projects/efficiency-pipeline.html",
     "href": "projects/efficiency-pipeline.html",
     "title": "6 Hours to Fully Reproduce 5 Years of Research",
@@ -67,13 +81,20 @@
     "href": "projects/efficiency-pipeline.html#what-i-built",
     "title": "6 Hours to Fully Reproduce 5 Years of Research",
     "section": "What I Built",
-    "text": "What I Built\nI designed a modular, figure-centric analysis pipeline from first principles, treating the paper as a product and each figure as a tracked deliverable.\n\n\n40 TB+ raw data consolidated\n\n\n12 figures, all reproducible\n\n\n215 commits of audit trail\n\n\n3 institutions coordinated\n\n\n7 contributors across 3 countries\n\n\nRepository architecture — a structured Git repo with per-figure folders and six dedicated notebooks, designed so collaborators could work in parallel without waiting on a central coordinator — cutting the back-and-forth that slows most multi-institution projects.\nStandardised ingestion — all raw experimental data and simulation outputs (from collaborators Dr. Yann-Edwin Keta at ESPCI Paris and Dr. Silke Henkes at Leiden University) were normalised into a single format. Three countries, three languages, one schema.\nSingle-source-of-truth figures — every figure is generated directly from raw data via its own notebook, with no manual steps in between. Changing a parameter, colour scheme, or dataset propagates automatically across the entire paper. This eliminated a whole category of human error risk.\nFuture-proofed environment — the full analysis environment is reproducible in a single command, with every dependency pinned to an exact version. Step-by-step documentation ensures any future researcher — or journal reviewers — can recreate results independently, with no configuration required.\nCross-continental coordination — managed asynchronous collaboration across three countries over two years, aligning contributors on data standards, figure revisions, and code conventions with standards that fit publishers.\nData consolidation at scale — 40 TB of raw experimental data, collected across five years using ever changing bio-image formats and conventions, was systematically catalogued, cleaned, and reduced into structured datasheets that feed directly into the pipeline. Every number in the paper traces back to a specific archieved file.\nThe pipeline wasn’t designed once and handed over — it evolved across 2.5 years as the scientific story changed.\n\nFigures were added, reframed, and cut entirely.\nReviewer feedback demanded new analyses mid-process.\nThe system had to be flexible enough to absorb that ambiguity without breaking — and robust enough that every change was traceable."
+    "text": "What I Built\nI designed a modular, figure-centric analysis pipeline from first principles, treating the paper as a product and each figure as a tracked deliverable.\n\n\n40 TB+ raw data consolidated\n\n\n12 figures, all reproducible\n\n\n215 commits of audit trail\n\n\n3 institutions coordinated\n\n\n7 co-authors across 3 countries\n\n\nRepository architecture — a structured Git repo with per-figure folders and six dedicated notebooks, designed so collaborators could work in parallel without waiting on a central coordinator — cutting the back-and-forth that slows most multi-institution projects.\nStandardised ingestion — all raw experimental data and simulation outputs (from collaborators Dr. Yann-Edwin Keta at ESPCI Paris and Dr. Silke Henkes at Leiden University) were normalised into a single format. Three countries, three languages, one schema.\nSingle-source-of-truth figures — every figure is generated directly from raw data via its own notebook, with no manual steps in between. Changing a parameter, colour scheme, or dataset propagates automatically across the entire paper. This eliminated a whole category of human error risk.\nFuture-proofed environment — the full analysis environment is reproducible in a single command, with every dependency pinned to an exact version. Step-by-step documentation ensures any future researcher — or journal reviewers — can recreate results independently, with no configuration required.\nCross-continental coordination — managed asynchronous collaboration across three countries over two years, aligning contributors on data standards, figure revisions, and code conventions with standards that fit publishers.\nData consolidation at scale — 40 TB of raw experimental data, collected across five years using ever changing bio-image formats and conventions, was systematically catalogued, cleaned, and reduced into structured datasheets that feed directly into the pipeline. Every number in the paper traces back to a specific archived file.\nThe pipeline wasn’t designed once and handed over — it evolved across 2.5 years as the scientific story changed.\n\nFigures were added, reframed, and cut entirely.\nReviewer feedback demanded new analyses mid-process.\nThe system had to be flexible enough to absorb that ambiguity without breaking — and robust enough that every change was traceable. The public data repository is the clean end of a longer trail — the 215 commits span it and the private upstream repository (available on github) where raw data assembly and figure development happened."
   },
   {
     "objectID": "projects/efficiency-pipeline.html#the-result",
     "href": "projects/efficiency-pipeline.html#the-result",
     "title": "6 Hours to Fully Reproduce 5 Years of Research",
     "section": "The Result",
-    "text": "The Result\nThe paper was submitted to Nature Communications. Every figure — across 12 panels drawing on 40 TB of source data — is fully reproducible and stays reproducible from a single resource, with no manual steps and no institutional knowledge required.\nThe real test came the day before my PhD defence. I needed a different colour scheme for my slides, so I regenerated all 12 figures from scratch. It took under 6 hours. Without the pipeline, the same task would have taken days — and risked introducing inconsistencies across the paper.\nThe full repository is publicly archived under CC BY-SA 4.0 as an open-science resource.\n\nView repository →"
+    "text": "The Result\nThe paper was submitted to Nature Communications. Every figure — across 12 panels drawing on 40 TB of source data — is fully reproducible and stays reproducible from a single resource, with no manual steps and no institutional knowledge required.\nThe real test came the day before my PhD defence. I needed a different colour scheme for my slides, so I regenerated all 12 figures from scratch. It took under 6 hours. Without the pipeline, the same task would have taken days — and risked introducing inconsistencies across the paper.\nThe full repository is publicly archived under CC BY-SA 4.0 as an open-science resource."
+  },
+  {
+    "objectID": "projects/efficiency-pipeline.html#the-external-stress-test",
+    "href": "projects/efficiency-pipeline.html#the-external-stress-test",
+    "title": "6 Hours to Fully Reproduce 5 Years of Research",
+    "section": "The External Stress Test",
+    "text": "The External Stress Test\nThe first stress test was self-imposed. The second one wasn’t.\nTwo months after publication, a reader posted a comment on PubPeer about the source data behind Figure 7F: a block of values in the control condition appeared twice, in the same order. Not a challenge to the biology — a claim about a file. A duplicated sample, introduced during data assembly.\nIt is exactly the class of error that no reader can see. It does not change the shape of a plot. It leaves no visual artefact. It sits inside a source-data table that nobody — not five expert reviewers, not four authors, not me — reads row by row. It is an accounting error, not an analytical one.\nThis pipeline made it possible to correct in 3 hours.\nLog it. I opened a public issue in the data repository and quoted the comment in full. The error report entered the same system as every figure in the paper: numbered, visible, attributable, closeable. The archived raw data was brought back online and the analysis repository reopened to redo the data assembly.\nLocate it. Because every panel is generated from raw data by a single notebook with no manual steps, the path from figure to notebook to source table to sample is a walk, not a search. Across 40 TB of catalogued source data, finding the fault was one traversal. The wrong sample was replaced with the correct one.\nRebuild it. Figure 7F was regenerated from raw data and every associated test re-run end to end. The issue was closed against the commits that fixed it.\n\n\n3 h of work, comment to corrected figure\n\n\n40 TB searched in one traversal\n\n\n3 commits to resolve\n\n\n0 conclusions changed\n\n\nThe commits are dated across three days. The work inside them is three hours. Nothing forced that gap closed, so I didn’t force it: I knew what had gone wrong within minutes of reading the comment, and the calendar bought sleep and time to walk my co-authors through the change before it went public.\nThat distance between elapsed time and effort is the whole argument. There was no archaeology. No hunting for a file across five years of storage. No reconstructing a two-year-old analysis from memory. No waiting on the one person who knew where the data lived. Every hour that passed was a decision, not a delay, which is only true when you already know exactly what you are looking at.\nThe pipeline did not prevent this error, and it was never going to. Data assembly has humans in it. What the pipeline changed is the cost of the error: cheap to locate, cheap to correct, impossible to quietly leave alone. In a project without one, the same comment produces weeks of reconstruction and an uncomfortable silence while it happens.\nThat silence is what damages a paper. Not the duplicated sample.\nReproducibility is not a box ticked at submission. It is a liability the corresponding author carries for as long as the paper is cited, and the only way to carry it cheaply is to have built the system before you needed it. Two years after the pipeline was designed and three months after the paper was published, a stranger on the internet stress-tested it without warning.\nThe system held.\n\nView repository →"
   }
 ]

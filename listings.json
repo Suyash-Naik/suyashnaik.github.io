@@ -2,6 +2,7 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/deploy-ai.html",
       "/projects/efficiency-pipeline.html"
     ]
   }

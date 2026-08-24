@@ -371,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
 <p><span class="stat-value">3</span> <span class="stat-label">institutions coordinated</span></p>
 </div>
 <div class="stat">
-<p><span class="stat-value">7</span> <span class="stat-label">contributors across 3 countries</span></p>
+<p><span class="stat-value">7</span> <span class="stat-label">co-authors across 3 countries</span></p>
 </div>
 </div>
 <p><strong>Repository architecture</strong> — a structured Git repo with per-figure folders and six dedicated notebooks, designed so collaborators could work in parallel without waiting on a central coordinator — cutting the back-and-forth that slows most multi-institution projects.</p>
@@ -379,20 +379,50 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Single-source-of-truth figures</strong> — every figure is generated directly from raw data via its own notebook, with no manual steps in between. Changing a parameter, colour scheme, or dataset propagates automatically across the entire paper. This eliminated a whole category of human error risk.</p>
 <p><strong>Future-proofed environment</strong> — the full analysis environment is reproducible in a single command, with every dependency pinned to an exact version. Step-by-step documentation ensures any future researcher — or journal reviewers — can recreate results independently, with no configuration required.</p>
 <p><strong>Cross-continental coordination</strong> — managed asynchronous collaboration across three countries over two years, aligning contributors on data standards, figure revisions, and code conventions with standards that fit publishers.</p>
-<p><strong>Data consolidation at scale</strong> — 40 TB of raw experimental data, collected across five years using ever changing bio-image formats and conventions, was systematically catalogued, cleaned, and reduced into structured datasheets that feed directly into the pipeline. Every number in the paper traces back to a specific archieved file.</p>
+<p><strong>Data consolidation at scale</strong> — 40 TB of raw experimental data, collected across five years using ever changing bio-image formats and conventions, was systematically catalogued, cleaned, and reduced into structured datasheets that feed directly into the pipeline. Every number in the paper traces back to a specific archived file.</p>
 <p><strong>The pipeline wasn’t designed once and handed over</strong> — it evolved across 2.5 years as the scientific story changed.</p>
 <p><a href="../art/assets/img/pipeline-preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../art/assets/img/pipeline-preview.png" class="project-image img-fluid" alt="Pipeline architecture overview"></a></p>
 <p>Figures were added, reframed, and cut entirely.</p>
 <p>Reviewer feedback demanded new analyses mid-process.</p>
-<p>The system had to be flexible enough to absorb that ambiguity without breaking — and robust enough that every change was traceable.</p>
+<p>The system had to be flexible enough to absorb that ambiguity without breaking — and robust enough that every change was traceable. The public data repository is the clean end of a longer trail — the 215 commits span it and the private upstream repository (available on github) where raw data assembly and figure development happened.</p>
 </section>
 <section id="the-result" class="level2">
 <h2 data-anchor-id="the-result">The Result</h2>
 <p>The paper was submitted to <a href="https://www.nature.com/articles/s41467-026-72366-z"><em>Nature Communications</em></a>. Every figure — across <strong>12 panels drawing on 40 TB of source data</strong> — is fully reproducible and stays reproducible from a single resource, with no manual steps and no institutional knowledge required.</p>
 <p>The real test came the day before my PhD defence. I needed a different colour scheme for my slides, so I regenerated all 12 figures from scratch. It took under 6 hours. Without the pipeline, the same task would have taken days — and risked introducing inconsistencies across the paper.</p>
 <p>The full repository is publicly archived under CC BY-SA 4.0 as an open-science resource.</p>
+</section>
+<section id="the-external-stress-test" class="level2">
+<h2 data-anchor-id="the-external-stress-test">The External Stress Test</h2>
+<p>The first stress test was self-imposed. The second one wasn’t.</p>
+<p>Two months after publication, a reader posted a comment on PubPeer about the source data behind Figure 7F: a block of values in the control condition appeared twice, in the same order. Not a challenge to the biology — a claim about a file. A duplicated sample, introduced during data assembly.</p>
+<p>It is exactly the class of error that no reader can see. It does not change the shape of a plot. It leaves no visual artefact. It sits inside a source-data table that nobody — not five expert reviewers, not four authors, not me — reads row by row. It is an accounting error, not an analytical one.</p>
+<p>This pipeline made it possible to correct in 3 hours.</p>
+<p><strong>Log it.</strong> I opened a public issue in the data repository and quoted the comment in full. The error report entered the same system as every figure in the paper: numbered, visible, attributable, closeable. The archived raw data was brought back online and the analysis repository reopened to redo the data assembly.</p>
+<p><strong>Locate it.</strong> Because every panel is generated from raw data by a single notebook with no manual steps, the path from <em>figure</em> to <em>notebook</em> to <em>source table</em> to <em>sample</em> is a walk, not a search. Across 40 TB of catalogued source data, finding the fault was one traversal. The wrong sample was replaced with the correct one.</p>
+<p><strong>Rebuild it.</strong> Figure 7F was regenerated from raw data and every associated test re-run end to end. The issue was closed against the commits that fixed it.</p>
+<div class="stats-strip">
+<div class="stat">
+<p><span class="stat-value">3 h</span> <span class="stat-label">of work, comment to corrected figure</span></p>
+</div>
+<div class="stat">
+<p><span class="stat-value">40 TB</span> <span class="stat-label">searched in one traversal</span></p>
+</div>
+<div class="stat">
+<p><span class="stat-value">3</span> <span class="stat-label">commits to resolve</span></p>
+</div>
+<div class="stat">
+<p><span class="stat-value">0</span> <span class="stat-label">conclusions changed</span></p>
+</div>
+</div>
+<p>The commits are dated across three days. The work inside them is three hours. Nothing forced that gap closed, so I didn’t force it: I knew what had gone wrong within minutes of reading the comment, and the calendar bought sleep and time to walk my co-authors through the change before it went public.</p>
+<p>That distance between elapsed time and effort is the whole argument. There was no archaeology. No hunting for a file across five years of storage. No reconstructing a two-year-old analysis from memory. No waiting on the one person who knew where the data lived. Every hour that passed was a decision, not a delay, which is only true when you already know exactly what you are looking at.</p>
+<p><strong>The pipeline did not prevent this error, and it was never going to.</strong> Data assembly has humans in it. What the pipeline changed is the <em>cost</em> of the error: cheap to locate, cheap to correct, impossible to quietly leave alone. In a project without one, the same comment produces weeks of reconstruction and an uncomfortable silence while it happens.</p>
+<p>That silence is what damages a paper. Not the duplicated sample.</p>
+<p>Reproducibility is not a box ticked at submission. It is a liability the corresponding author carries for as long as the paper is cited, and the only way to carry it cheaply is to have built the system before you needed it. Two years after the pipeline was designed and three months after the paper was published, a stranger on the internet stress-tested it without warning.</p>
+<p>The system held.</p>
 <div class="project-links">
-<p><a href="https://github.com/Suyash-Naik/2026-Keratinepithlialspreadingcoordinate-Data" class="btn-outline">View repository →</a></p>
+<p><a href="https://github.com/Suyash-Naik/2026-Keratinepithelialspreadingcoordinate-Data" class="btn-outline">View repository →</a></p>
 </div>
 
 
